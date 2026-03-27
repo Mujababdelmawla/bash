@@ -4,7 +4,7 @@
 # Task: we are trying to create 3 directpries and 2 files inside each directory using loops & conditionals.
 
 # Get the Desktop path of the current user
-desktop_path="$HOME/Desktop"
+desktop_path="/mnt/c/Users/asus/bash"
 
 # Loop to create 3 directories
 for i in {1..3}
@@ -37,7 +37,9 @@ do
             echo "Creating $file_name inside $dir_name..."
             touch "$file_path"
         fi
-    done
+    done 
 done
 
-echo "Process complete: 3 directories and 2 files have been created on the Desktop."
+
+
+echo "Process complete: 3 directories and 2 files have been created "
