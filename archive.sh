@@ -12,7 +12,7 @@ archive_name="/mnt/c/Users/asus/bash/my_folder_archive.tar.gz"
 mkdir -p "$folder_name"
 
 # step2: create file1.txt and add a content inside it 
-echo "this is the 1st content of the 1st file" > "$file1"
+echo "this is the 1st content of the 1st file" >> "$file1"
 
 # step3: create file2.txt and copy the content of file1.txt to it 
 cp "$file1" "$file2"
