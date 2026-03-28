@@ -12,10 +12,10 @@ else
 
 # check the os of the device 
 
-if [[ "uname" == "Darwin" ]];
+if [[ "$(uname)" == "Darwin" ]];
 then 
 	brew install $tool 
-elif [[ "uname" == "linux" ]];
+elif [[ "$(uname)" == "linux" ]];
 then 
 	sudo apt update 
 	sudo apt install -y $tool

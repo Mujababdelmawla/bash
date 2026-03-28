@@ -12,12 +12,12 @@ else
 
 # check if the system is macos 
 
-if [[ "$uname" == "Darwin" ]]; 
+if [[ "$(uname)" == "Darwin" ]]; 
 then 
 	brew insatll $tool
 
 
-elif [[ "$uname" == "linux" ]];
+elif [[ "$(uname)" == "linux" ]];
 then 
 	sudo apt update 
 	sudo apt install -y $tool
