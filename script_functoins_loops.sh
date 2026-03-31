@@ -30,7 +30,7 @@ install_tool()
 
 	# verify the installation 
 	
-	if command -v &> /dev/null;
+	if command -v  $tool &> /dev/null;
 	then 
 		echo "$tool has been installled successfully ."
 
@@ -44,7 +44,7 @@ install_tool()
 
 for tool in ${tools[@]};
 do 
-	if command -v &> /dev/null ;
+	if command -v $tool &> /dev/null ;
 	then 
 		echo "$tool is already installed "
 	else 
